@@ -39,6 +39,10 @@ export const GlobalStyle = createGlobalStyle`
 
     section {
         padding: 100px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
     section:nth-of-type(odd) {
