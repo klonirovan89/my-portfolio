@@ -58,7 +58,4 @@ const SkillTitle = styled.h3`
 `
 const SkillText = styled.p`
     text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
 `
