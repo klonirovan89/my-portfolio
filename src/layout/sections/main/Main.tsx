@@ -10,7 +10,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-around"} wrap={'wrap'}>
+                <FlexWrapper align={"center"} justify={"space-between"} wrap={'wrap'}>
                     <div>
                         <SmallText>Hi There</SmallText>
                         <Name>I am <span>Pasha Shcherbachenko</span></Name>
@@ -26,8 +26,6 @@ export const Main = () => {
 const StyledMain = styled.section`
     min-height: 100vh;
     background: #1F1F20;
-    display: flex;
-    justify-content: flex-start;
 `
 
 const PhotoWrapper = styled.div`
@@ -68,25 +66,23 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
-    display: flex;
-    justify-content: flex-start;
-    
     ${font({weight: 400, Fmax: 27, Fmin: 20})}
 `
 
 const Name = styled.h2`
-    white-space: nowrap;
-    
     ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
-
     letter-spacing: 0.05em;
     margin: 10px 0;
-          
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    
     span {
         position: relative;
         z-index: 0;
-        white-space: nowrap;
-        
+                
         &::before {
             position: absolute;
             content: '';
@@ -108,8 +104,5 @@ const Name = styled.h2`
 `
 
 const SmallText = styled.h2`
-    display: flex;
-    justify-content: flex-start;
-    font-size: 14px;
-    font-weight: 400;
+    ${font({family: "'Josefin Sans', sans-serif", weight: 400, Fmax: 20, Fmin: 14})}
 `

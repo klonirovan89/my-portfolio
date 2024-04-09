@@ -54,6 +54,14 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${theme.colors.secondaryBg};
     }
 
+    h1 {
+        text-align: start;
+    }
+    
+    h2 {
+        text-align: start;
+    }
+    
     h3 {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 700;
