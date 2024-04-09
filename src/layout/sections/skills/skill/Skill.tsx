@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../../components/Icon/Icon";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
+import {theme} from "../../../../styles/Theme";
 
 type PropsType = {
     iconId: string
@@ -25,8 +26,13 @@ export const Skill = (props: PropsType) => {
 };
 
 const StyledSkill = styled.div`
+    flex-grow: 1;
     width: 380px;
-    padding: 62px 28px 40px;
+    padding: 62px 20px 40px;
+    
+    @media ${theme.media.mobile} {
+        padding: 62px 0 40px;
+    }
 `
 
 export const IconWrapper = styled.div`

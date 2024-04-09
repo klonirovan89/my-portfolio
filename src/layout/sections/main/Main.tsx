@@ -73,29 +73,29 @@ const Name = styled.h2`
     ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
     letter-spacing: 0.05em;
     margin: 10px 0;
-    
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 12px;
+    gap: 10px;
     
     span {
         position: relative;
         z-index: 0;
-                
-        &::before {
-            position: absolute;
-            content: '';
-            
-            display: inline-block;
-            
-            bottom: 0;
-            z-index: -1;
-            
-            width: 100%;
-            height: 20px;
-            background-color: ${theme.colors.accent};
-        }
+        white-space: nowrap;
+        
+        // &::before {
+        //     position: absolute;
+        //     content: '';
+        //     display: inline-block;
+        //    
+        //     bottom: 0;
+        //     z-index: -1;
+        //    
+        //     width: 100%;
+        //     height: 20px;
+        //     background-color: ${theme.colors.accent};
+        // }
     }
 
     @media ${theme.media.mobile} {

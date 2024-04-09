@@ -40,10 +40,11 @@ export const GlobalStyle = createGlobalStyle`
 
     section {
         padding: 100px 0;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+
+
+        @media ${theme.media.mobile} {
+            padding: 80px 0
+        }
     }
 
     section:nth-of-type(odd) {
