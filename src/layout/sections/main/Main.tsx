@@ -40,14 +40,14 @@ const PhotoWrapper = styled.div`
         border: 5px solid ${theme.colors.accent};
         
         position: absolute;
-        top: -24px;
+        top: -20px;
         left: 24px;
         z-index: -1;
 
         @media ${theme.media.mobile} {
-            width: 314px;
-            height: 414px;
-            top: -17px;
+            width: 300px;
+            height: 403px;
+            top: -11px;
             left: 20px;
         }
     }
@@ -70,7 +70,7 @@ const MainTitle = styled.h1`
 `
 
 const Name = styled.h2`
-    ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
+    ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 26})}
     letter-spacing: 0.05em;
     margin: 10px 0;
 
@@ -82,7 +82,6 @@ const Name = styled.h2`
     span {
         position: relative;
         z-index: 0;
-        white-space: nowrap;
         
         // &::before {
         //     position: absolute;
@@ -99,7 +98,7 @@ const Name = styled.h2`
     }
 
     @media ${theme.media.mobile} {
-        margin: 15px 0 22px 0;
+        margin: 10px 0 10px 0;
     }
 `
 
