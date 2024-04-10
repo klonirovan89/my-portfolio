@@ -1,12 +1,10 @@
-import React from 'react';
-import {Icon} from "../Icon/Icon";
+import React from 'react'
+import { Icon } from '../Icon/Icon'
 
 export const Logo: React.FC = () => {
-    return (
-        <a href="">
-            <Icon iconId={'code'}/>
-        </a>
-    )
+  return (
+    <a href="">
+      <Icon iconId={'code'} />
+    </a>
+  )
 }
-
-

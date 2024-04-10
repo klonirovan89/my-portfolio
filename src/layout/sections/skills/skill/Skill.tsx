@@ -1,26 +1,25 @@
-import React from 'react';
+import React from 'react'
 
-import {Icon} from "../../../../components/Icon/Icon";
-import {FlexWrapper} from "../../../../components/FlexWrapper";
-import {S} from "./Skills_Styles";
+import { Icon } from '../../../../components/Icon/Icon'
+import { FlexWrapper } from '../../../../components/FlexWrapper'
+import { S } from './Skills_Styles'
 
 type PropsType = {
-    iconId: string
-    title: string
-    description: string
+  iconId: string
+  title: string
+  description: string
 }
 
 export const Skill = (props: PropsType) => {
-    return (
-        <S.Skill>
-            <FlexWrapper direction={'column'} align={'center'}>
-               <S.IconWrapper>
-                   <Icon iconId={props.iconId}/>
-               </S.IconWrapper>
-                <S.SkillTitle>{props.title}</S.SkillTitle>
-                <S.SkillText>{props.description}</S.SkillText>
-            </FlexWrapper>
-        </S.Skill>
-
-    )
+  return (
+    <S.Skill>
+      <FlexWrapper direction={'column'} align={'center'}>
+        <S.IconWrapper>
+          <Icon iconId={props.iconId} />
+        </S.IconWrapper>
+        <S.SkillTitle>{props.title}</S.SkillTitle>
+        <S.SkillText>{props.description}</S.SkillText>
+      </FlexWrapper>
+    </S.Skill>
+  )
 }
