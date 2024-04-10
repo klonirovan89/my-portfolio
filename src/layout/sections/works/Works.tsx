@@ -9,8 +9,6 @@ import {TabMenu, TabsItemsType, TabsStatusType} from "./tabMenu/TabMenu";
 import {Container} from "../../../components/Container";
 import {S} from "./Works_Styles"
 
-// const tabsItems = ["All", "Landing page", "React", "SPA"]
-
 const tabsItems: TabsItemsType = [
     {
         title: "All",
@@ -30,7 +28,6 @@ const tabsItems: TabsItemsType = [
     },
 
 ]
-
 
 const workData = [
     {
