@@ -13,7 +13,7 @@ export const Main = () => {
                 <FlexWrapper align={"center"} justify={"space-between"} wrap={'wrap'}>
                     <div>
                         <SmallText>Hi There</SmallText>
-                        <Name>I am <span>Pasha Shcherbachenko</span></Name>
+                        <Name>I am <span>Pavel Shcherbachenko</span></Name>
                         <MainTitle>A Web Developer. </MainTitle>
                     </div>
                     <PhotoWrapper><Photo src={photo} alt=""/></PhotoWrapper>
@@ -104,4 +104,6 @@ const Name = styled.h2`
 
 const SmallText = styled.h2`
     ${font({family: "'Josefin Sans', sans-serif", weight: 400, Fmax: 20, Fmin: 14})}
+    
+    margin-top: 65px;
 `

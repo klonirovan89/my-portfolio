@@ -3,12 +3,13 @@ import styled from "styled-components";
 import {Icon} from "../../components/Icon/Icon";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {theme} from "../../styles/Theme";
+import {font} from "../../Common";
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <FlexWrapper direction={"column"} align={"center"}>
-                <Name>Pasha Shcherbachenko</Name>
+                <Name>Pavel Shcherbachenko</Name>
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
@@ -31,7 +32,7 @@ export const Footer = () => {
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
-                <Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</Copyright>
+                <Copyright>© 2023 Pavel Shcherbachenko, All Rights Reserved.</Copyright>
             </FlexWrapper>
         </StyledFooter>
     );
@@ -67,15 +68,15 @@ const SocialLink = styled.a`
     color: ${theme.colors.accent};
     
     &:hover {
+        background-color: ${theme.colors.accent};
         color: ${theme.colors.primaryBg};
         transform: translateY(-4px);
     }
 `
 
 const Name = styled.span`
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
+    ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 22, Fmin: 16})}
+    
     letter-spacing: 3px;
 `
 
