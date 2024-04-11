@@ -3,12 +3,15 @@ import { theme } from '../../styles/Theme'
 
 const Slider = styled.div`
   max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  cursor: pointer;
 `
 
-const Slid = styled.div`
+const Slide = styled.div`
   text-align: center;
 `
 
@@ -45,7 +48,7 @@ const Pagination = styled.div`
 
 export const S = {
   Slider,
-  Slid,
+  Slide,
   Text,
   Name,
   Pagination,
