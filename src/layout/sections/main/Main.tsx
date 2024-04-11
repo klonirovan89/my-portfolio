@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Typewriter from 'typewriter-effect'
 import photo from './../../../assets/images/myPhoto.jpg'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import { Container } from '../../../components/Container'
+
 import { S } from './Main_Styles'
 
 export const Main: React.FC = () => {
@@ -15,7 +16,16 @@ export const Main: React.FC = () => {
             <S.Name>
               I am <span>Pavel Shcherbachenko</span>
             </S.Name>
-            <S.MainTitle>A Web Developer. </S.MainTitle>
+            <S.MainTitle>
+              <Typewriter
+                options={{
+                  strings: ['Hello', 'A Web Developer.'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+              {/*A Web Developer.*/}
+            </S.MainTitle>
           </div>
           <S.PhotoWrapper>
             <S.Photo src={photo} alt="" />
