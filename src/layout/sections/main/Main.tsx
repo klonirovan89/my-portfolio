@@ -17,14 +17,15 @@ export const Main: React.FC = () => {
               I am <span>Pavel Shcherbachenko</span>
             </S.Name>
             <S.MainTitle>
+              <p>A Web Developer.</p>
               <Typewriter
                 options={{
-                  strings: ['Hello', 'A Web Developer.'],
+                  strings: ['A Web Developer.', 'A Frontend Developer.'],
                   autoStart: true,
                   loop: true,
+                  delay: 80,
                 }}
               />
-              {/*A Web Developer.*/}
             </S.MainTitle>
           </div>
           <S.PhotoWrapper>
