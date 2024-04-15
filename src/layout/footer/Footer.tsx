@@ -27,8 +27,8 @@ export const Footer: React.FC = () => {
         <S.SocialList>
           {socialItemsData.map((item, index) => {
             return (
-              <S.SocialItem>
-                <S.SocialLink>
+              <S.SocialItem key={index}>
+                <S.SocialLink key={index}>
                   <Icon
                     key={index}
                     iconId={item.iconId}

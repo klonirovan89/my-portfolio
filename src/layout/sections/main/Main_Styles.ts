@@ -66,19 +66,6 @@ const Name = styled.h2`
   span {
     position: relative;
     z-index: 0;
-
-    // &::before {
-    //     position: absolute;
-    //     content: '';
-    //     display: inline-block;
-    //
-    //     bottom: 0;
-    //     z-index: -1;
-    //
-    //     width: 100%;
-    //     height: 20px;
-    //     background-color: ${theme.colors.accent};
-    // }
   }
 
   @media ${theme.media.mobile} {

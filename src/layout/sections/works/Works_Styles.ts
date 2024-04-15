@@ -28,10 +28,6 @@ const Work = styled.div`
       margin-left: 20px;
     }
   }
-  //
-  // @media ${theme.media.desktop} {
-  //   max-width: 540px;
-  // }
 `
 
 const ImageWrapper = styled.div`

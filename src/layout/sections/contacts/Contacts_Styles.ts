@@ -20,10 +20,10 @@ const Form = styled.form`
   }
 `
 
-const Field = styled.input`
+const Field = styled.input<{ errorMessage: boolean }>`
   width: 100%;
   background-color: ${theme.colors.secondaryBg};
-  border: 1px solid ${theme.colors.borderColor};
+  border: 1px solid ${props => (props.errorMessage ? 'red' : theme.colors.borderColor)};
   padding: 7px 15px;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
@@ -41,8 +41,15 @@ const Field = styled.input`
   }
 `
 
+const ErrorMessage = styled.p`
+  width: 100%;
+  text-align: start;
+  color: red;
+`
+
 export const S = {
   Contacts,
   Form,
   Field,
+  ErrorMessage,
 }

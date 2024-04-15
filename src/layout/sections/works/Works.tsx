@@ -67,6 +67,7 @@ export const Works: React.FC = () => {
             {filteredWorks.map(work => {
               return (
                 <motion.div
+                  key={work.id}
                   style={{ maxWidth: '540px', width: '400px', flexGrow: 1 }}
                   id={work.id}
                   initial={{ opacity: 0 }}
