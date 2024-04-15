@@ -1,7 +1,9 @@
 import { theme } from '../../../styles/Theme'
 import styled from 'styled-components'
 
-const Contacts = styled.section``
+const Contacts = styled.section`
+  position: relative;
+`
 
 const StyledForm = styled.form`
   max-width: 500px;

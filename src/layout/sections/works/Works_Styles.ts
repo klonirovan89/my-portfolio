@@ -7,6 +7,7 @@ import { FlexWrapper } from '../../../components/FlexWrapper'
 //Works
 
 const Works = styled.section`
+  position: relative;
   ${FlexWrapper} {
     gap: 30px;
   }

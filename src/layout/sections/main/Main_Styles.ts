@@ -37,6 +37,7 @@ const Photo = styled.img`
   height: 430px;
   object-fit: cover;
   margin-right: 20px;
+  cursor: pointer;
 
   @media ${theme.media.mobile} {
     width: 310px;
