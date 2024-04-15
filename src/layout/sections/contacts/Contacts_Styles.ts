@@ -5,7 +5,7 @@ const Contacts = styled.section`
   position: relative;
 `
 
-const StyledForm = styled.form`
+const Form = styled.form`
   max-width: 500px;
   width: 100%;
   display: flex;
@@ -43,6 +43,6 @@ const Field = styled.input`
 
 export const S = {
   Contacts,
-  StyledForm,
+  Form,
   Field,
 }

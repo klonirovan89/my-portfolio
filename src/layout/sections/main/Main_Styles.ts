@@ -88,8 +88,6 @@ const Name = styled.h2`
 
 const SmallText = styled.h2`
   ${font({ family: "'Josefin Sans', sans-serif", weight: 400, Fmax: 20, Fmin: 14 })}
-
-  margin-top: 65px;
 `
 
 export const S = {

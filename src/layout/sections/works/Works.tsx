@@ -8,6 +8,7 @@ import timerImg from './../../../assets/images/proj-2.png'
 import { TabMenu, TabsItemsType } from './tabMenu/TabMenu'
 import { Container } from '../../../components/Container'
 import { S } from './Works_Styles'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const tabsItems: TabsItemsType = [
   {
@@ -34,12 +35,14 @@ const workData = [
     title: 'Social Network',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     type: 'spa',
+    id: 'spa',
   },
   {
     src: timerImg,
     title: 'Timer',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     type: 'react',
+    id: 'react',
   },
 ]
 
@@ -60,9 +63,22 @@ export const Works: React.FC = () => {
           setCurrentFilterStatus={setCurrentFilterStatus}
         />
         <FlexWrapper justify={'space-around'} align={'flex-start'} wrap={'wrap'}>
-          {filteredWorks.map((work, index) => {
-            return <Work key={index} src={work.src} title={work.title} text={work.text} />
-          })}
+          <AnimatePresence>
+            {filteredWorks.map(work => {
+              return (
+                <motion.div
+                  style={{ maxWidth: '540px', width: '400px', flexGrow: 1 }}
+                  id={work.id}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  layout
+                >
+                  <Work key={work.id} src={work.src} title={work.title} text={work.text} />
+                </motion.div>
+              )
+            })}
+          </AnimatePresence>
         </FlexWrapper>
       </Container>
     </S.Works>

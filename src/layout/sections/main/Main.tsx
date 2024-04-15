@@ -1,6 +1,6 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
-import photo from './../../../assets/images/myPhoto.jpg'
+import photo from './../../../assets/images/myPhoto2.webp'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import { Container } from '../../../components/Container'
 import Tilt from 'react-parallax-tilt'

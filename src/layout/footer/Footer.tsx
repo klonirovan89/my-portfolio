@@ -32,9 +32,9 @@ export const Footer: React.FC = () => {
                   <Icon
                     key={index}
                     iconId={item.iconId}
-                    height={'21px'}
-                    width={'21px'}
-                    viewBox={'0 0 21px 21px'}
+                    height={'21'}
+                    width={'21'}
+                    viewBox={'0 0 21 21'}
                   />
                 </S.SocialLink>
               </S.SocialItem>

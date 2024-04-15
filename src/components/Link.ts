@@ -20,11 +20,14 @@ export const Link = styled.a<{ active?: boolean }>`
     content: '';
     display: inline-block;
     position: absolute;
+    height: 0;
     bottom: 5px;
     left: 0;
     right: 0;
     background-color: ${theme.colors.accent};
     z-index: -1;
+
+    transition: ${theme.animations.transition};
 
     ${props =>
       props.active &&
