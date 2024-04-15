@@ -8,7 +8,7 @@ import { S } from './Slogan_Styles'
 
 export const Slogan: React.FC = () => {
   return (
-    <S.Slogan>
+    <S.Slogan id={'slogan'}>
       <Container>
         <FlexWrapper direction={'column'} align={'center'}>
           <SectionTitle>I Am Available For Freelance</SectionTitle>

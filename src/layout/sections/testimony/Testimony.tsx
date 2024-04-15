@@ -10,7 +10,7 @@ import { C } from './Testimony_Styles'
 
 export const Testimony: React.FC = () => {
   return (
-    <C.Testimony>
+    <C.Testimony id={'testimony'}>
       <Container>
         <SectionTitle>Testimony</SectionTitle>
         <FlexWrapper direction={'column'} align={'center'}>
