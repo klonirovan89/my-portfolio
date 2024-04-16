@@ -13,7 +13,7 @@ export const Skills = () => {
       <Container>
         <SectionTitle>My Skills</SectionTitle>
         <FlexWrapper wrap={'wrap'} justify={'space-around'}>
-          <Fade cascade={true} damping={0.1} direction={'up'}>
+          <Fade cascade={true} damping={0.05} direction={'up'}>
             {skillsData.map((skill, index) => {
               return <Skill key={index} iconId={skill.iconId} title={skill.title} />
             })}

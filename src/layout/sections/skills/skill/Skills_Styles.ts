@@ -11,11 +11,11 @@ const Skills = styled.section`
 
 const Skill = styled.div`
   flex-grow: 1;
-  width: 380px;
+  width: 210px;
   padding: 42px 20px 52px;
 
   @media ${theme.media.mobile} {
-    padding: 62px 0 40px;
+    padding: 40px 0 40px;
   }
 `
 
@@ -37,7 +37,7 @@ const IconWrapper = styled.div`
 `
 
 const SkillTitle = styled.h3`
-  margin: 70px 0 15px;
+  margin: 50px 0 15px;
 
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
