@@ -10,7 +10,7 @@ const Main = styled.section`
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
-  margin: 65px 0;
+  margin: 100px 0;
 `
 
 const Photo = styled.img`
@@ -28,8 +28,8 @@ const Photo = styled.img`
   }
 
   @media ${theme.media.mobile} {
-    width: 340px;
-    height: 340px;
+    width: 300px;
+    height: 300px;
   }
 `
 
