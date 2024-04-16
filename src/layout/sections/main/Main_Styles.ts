@@ -10,12 +10,12 @@ const Main = styled.section`
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
-  margin: 100px 0;
+  margin: 90px 0 50px 0;
 `
 
 const Photo = styled.img`
-  width: 450px;
-  height: 450px;
+  width: 430px;
+  height: 430px;
   object-fit: cover;
   cursor: pointer;
   border-radius: 50%;
@@ -65,15 +65,10 @@ const Name = styled.h2`
   }
 `
 
-const SmallText = styled.h2`
-  ${font({ family: "'Josefin Sans', sans-serif", weight: 400, Fmax: 20, Fmin: 14 })}
-`
-
 export const S = {
   Main,
   PhotoWrapper,
   Photo,
   MainTitle,
   Name,
-  SmallText,
 }

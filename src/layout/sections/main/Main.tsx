@@ -18,9 +18,8 @@ export const Main: React.FC = () => {
             </Tilt>
           </S.PhotoWrapper>
           <div>
-            <S.SmallText>Hi There</S.SmallText>
             <S.Name>
-              I'm <span>Pavel Shcherbachenko!</span>
+              Hi, I'm<span>Pavel Shcherbachenko!</span>
             </S.Name>
             <S.MainTitle>
               <Typewriter
