@@ -3,6 +3,7 @@ import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import './../../styles/slider.css'
 import { S } from './Slider_Styles'
+import { itemsSlider } from '../../common/consts'
 
 type SlidePropsType = {
   text: string
@@ -18,26 +19,9 @@ const Slide: React.FC<SlidePropsType> = (props: SlidePropsType) => {
   )
 }
 
-const items = [
-  <Slide
-    text={
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-    }
-    userName={'@Ivan Ivanow'}
-  />,
-  <Slide
-    text={
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-    }
-    userName={'@Ivan Ivanow'}
-  />,
-  <Slide
-    text={
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-    }
-    userName={'@Ivan Ivanow'}
-  />,
-]
+const items = itemsSlider.map(el => {
+  return <Slide text={el.text} userName={el.userName} />
+})
 
 export const Slider: React.FC = () => (
   <S.Slider>

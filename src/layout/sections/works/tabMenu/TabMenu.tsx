@@ -1,11 +1,8 @@
 import React from 'react'
 
-import { Link } from '../../../../components/Link'
+import { Link } from '../../../../components'
 import { S } from './TabMenu_Styles'
-
-export type TabsStatusType = 'all' | 'landing' | 'react' | 'spa'
-
-export type TabsItemsType = { title: string; status: TabsStatusType }[]
+import { TabsItemsType, TabsStatusType } from '../../../../common/consts'
 
 type PropsType = {
   tabsItems: TabsItemsType

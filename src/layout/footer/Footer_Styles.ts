@@ -3,9 +3,9 @@ import { theme } from '../../styles/Theme'
 import { font } from '../../Common'
 
 const Footer = styled.footer`
-  position: relative;
-  background-color: ${theme.colors.primaryBg};
+  background-color: ${theme.colors.secondaryBg};
   padding: 40px 0;
+  position: relative;
 `
 
 const SocialList = styled.ul`

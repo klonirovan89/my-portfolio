@@ -1,11 +1,5 @@
 import styled from 'styled-components'
-
-type FlexWrapperType = {
-  direction?: string
-  justify?: string
-  align?: string
-  wrap?: string
-}
+import { FlexWrapperType } from '../common/consts'
 
 export const FlexWrapper = styled.div<FlexWrapperType>`
   display: flex;

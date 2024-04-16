@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { Icon } from '../Icon/Icon'
+import { Icon } from '../Icon'
 import { animateScroll } from 'react-scroll'
 
 export const GoTopBtn = () => {

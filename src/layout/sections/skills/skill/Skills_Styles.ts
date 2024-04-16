@@ -45,14 +45,10 @@ const SkillTitle = styled.h3`
   letter-spacing: 1px;
   text-transform: uppercase;
 `
-const SkillText = styled.p`
-  text-align: center;
-`
 
 export const S = {
   Skills,
   Skill,
   IconWrapper,
   SkillTitle,
-  SkillText,
 }

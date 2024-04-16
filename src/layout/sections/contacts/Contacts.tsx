@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser'
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { ControlledTextField } from '../../../components/textField/controlled-text-field'
+import { ControlledTextField } from '../../../components/controlledTextField'
 
 export type FormValues = z.infer<typeof loginSchema>
 

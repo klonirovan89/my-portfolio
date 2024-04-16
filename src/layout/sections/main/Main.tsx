@@ -1,8 +1,8 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 import photo from './../../../assets/images/myPhoto2.webp'
-import { FlexWrapper } from '../../../components/FlexWrapper'
-import { Container } from '../../../components/Container'
+import { FlexWrapper } from '../../../components'
+import { Container } from '../../../components'
 import Tilt from 'react-parallax-tilt'
 
 import { S } from './Main_Styles'

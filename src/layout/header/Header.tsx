@@ -1,11 +1,10 @@
 import React from 'react'
-import { Logo } from '../../components/Logo/Logo'
-import { Container } from '../../components/Container'
-import { FlexWrapper } from '../../components/FlexWrapper'
-
-import { MobileMenu } from './headerMenu/mobileMenu/MobileMenu'
+import { Logo } from '../../components/Logo'
+import { Container } from '../../components'
+import { FlexWrapper } from '../../components'
+import { MobileMenu } from './headerMenu/mobileMenu'
 import { S } from './Header_Styles'
-import { DesktopMenu } from './headerMenu/desktopMenu/DesktopMenu'
+import { DesktopMenu } from './headerMenu/desktopMenu'
 
 export const Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth)

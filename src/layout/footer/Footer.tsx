@@ -1,23 +1,9 @@
 import React from 'react'
 
-import { Icon } from '../../components/Icon/Icon'
-import { FlexWrapper } from '../../components/FlexWrapper'
+import { Icon } from '../../components/Icon'
+import { FlexWrapper } from '../../components'
 import { S } from './Footer_Styles'
-
-const socialItemsData = [
-  {
-    iconId: 'instagram',
-  },
-  {
-    iconId: 'telegram',
-  },
-  {
-    iconId: 'vk',
-  },
-  {
-    iconId: 'linkedin',
-  },
-]
+import { footerMenuItems } from '../../common/consts'
 
 export const Footer: React.FC = () => {
   return (
@@ -25,10 +11,10 @@ export const Footer: React.FC = () => {
       <FlexWrapper direction={'column'} align={'center'}>
         <S.Name>Pavel Shcherbachenko</S.Name>
         <S.SocialList>
-          {socialItemsData.map((item, index) => {
+          {footerMenuItems.map((item, index) => {
             return (
               <S.SocialItem key={index}>
-                <S.SocialLink key={index}>
+                <S.SocialLink href={item.href} target={'_blank'} key={index}>
                   <Icon
                     key={index}
                     iconId={item.iconId}

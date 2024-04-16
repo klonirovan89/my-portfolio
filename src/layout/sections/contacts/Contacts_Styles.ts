@@ -39,6 +39,14 @@ const Field = styled.input<{ errorMessage: boolean }>`
   &:focus-visible {
     outline: 1px solid ${theme.colors.borderColor};
   }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: ${theme.colors.font}; /* Цвет текста */
+    background-color: ${theme.colors.secondaryBg}; /* Цвет фона */
 `
 
 const ErrorMessage = styled.p`

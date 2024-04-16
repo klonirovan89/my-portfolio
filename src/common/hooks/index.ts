@@ -1,0 +1,1 @@
+export { useParticleOptions } from './optionsParticle'

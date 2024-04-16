@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon } from '../Icon/Icon'
+import { Icon } from '../Icon'
 import { animateScroll } from 'react-scroll'
 
 export const Logo: React.FC = () => {

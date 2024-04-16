@@ -1,5 +1,5 @@
 import { FieldValues, UseControllerProps, useController } from 'react-hook-form'
-import { TextField, TextFiledProps } from './TextField'
+import { TextField, TextFiledProps } from '../textField'
 
 type Props<T extends FieldValues> = UseControllerProps<T> & TextFiledProps
 export const ControlledTextField = <T extends FieldValues>({

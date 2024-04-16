@@ -1,13 +1,12 @@
 import React from 'react'
 
-import { Icon } from '../../../../components/Icon/Icon'
-import { FlexWrapper } from '../../../../components/FlexWrapper'
+import { Icon } from '../../../../components/Icon'
+import { FlexWrapper } from '../../../../components'
 import { S } from './Skills_Styles'
 
 type PropsType = {
   iconId: string
   title: string
-  description: string
 }
 
 export const Skill = (props: PropsType) => {
@@ -18,7 +17,6 @@ export const Skill = (props: PropsType) => {
           <Icon iconId={props.iconId} />
         </S.IconWrapper>
         <S.SkillTitle>{props.title}</S.SkillTitle>
-        <S.SkillText>{props.description}</S.SkillText>
       </FlexWrapper>
     </S.Skill>
   )
