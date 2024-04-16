@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-import { SectionTitle } from '../../../components/SectionTitle'
-import { FlexWrapper } from '../../../components/FlexWrapper'
+import { SectionTitle } from '../../../components'
+import { FlexWrapper } from '../../../components'
 import { Work } from './work'
 import { TabMenu } from './tabMenu'
 import { Container } from '../../../components'

@@ -1,13 +1,14 @@
 import styled from 'styled-components'
-import { Button } from '../../../components/Button'
+import { Button } from '../../../components'
 import { theme } from '../../../styles/Theme'
-import { Link } from '../../../components/Link'
-import { FlexWrapper } from '../../../components/FlexWrapper'
+import { Link } from '../../../components'
+import { FlexWrapper } from '../../../components'
 
 //Works
 
 const Works = styled.section`
   position: relative;
+
   ${FlexWrapper} {
     gap: 30px;
   }
@@ -17,9 +18,6 @@ const Works = styled.section`
 
 const Work = styled.div`
   background-color: ${theme.colors.secondaryBg};
-  //max-width: 540px;
-  //width: 330px;
-  //flex-grow: 1;
 
   ${Link} {
     padding: 10px 0;
@@ -95,7 +93,9 @@ const Description = styled.div`
   padding: 25px 20px;
 `
 
-const Title = styled.h3``
+const Title = styled.h3`
+  color: ${theme.colors.accent};
+`
 
 const Text = styled.p`
   margin: 14px 0 10px;

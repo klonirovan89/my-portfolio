@@ -11,41 +11,27 @@ const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
   margin: 65px 0;
-
-  &::before {
-    content: '';
-    width: 360px;
-    height: 470px;
-    border: 5px solid ${theme.colors.accent};
-
-    position: absolute;
-    top: -20px;
-    left: 24px;
-    z-index: -1;
-
-    @media ${theme.media.mobile} {
-      width: 300px;
-      height: 403px;
-      top: -11px;
-      left: 20px;
-    }
-  }
 `
 
 const Photo = styled.img`
-  width: 350px;
-  height: 430px;
+  width: 450px;
+  height: 450px;
   object-fit: cover;
-  margin-right: 20px;
   cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 3rem 1rem white;
+
+  transition: 1s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 4rem 1rem white;
+  }
 
   @media ${theme.media.mobile} {
-    width: 310px;
-    height: 380px;
+    width: 340px;
+    height: 340px;
   }
 `
-
-const TextWrapper = styled.div``
 
 const MainTitle = styled.h1`
   width: 100%;
@@ -90,5 +76,4 @@ export const S = {
   MainTitle,
   Name,
   SmallText,
-  TextWrapper,
 }

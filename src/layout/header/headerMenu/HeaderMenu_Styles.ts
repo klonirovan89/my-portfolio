@@ -123,7 +123,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     display: block;
     width: 36px;
     height: 2px;
-    background-color: ${theme.colors.font};
+    background-color: ${theme.colors.accent};
     position: absolute;
     left: 40px;
     bottom: 50px;
@@ -138,7 +138,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       display: block;
       width: 36px;
       height: 2px;
-      background-color: ${theme.colors.font};
+      background-color: ${theme.colors.accent};
       position: absolute;
       transform: translateY(-10px);
 
@@ -154,7 +154,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       display: block;
       width: 24px;
       height: 2px;
-      background-color: ${theme.colors.font};
+      background-color: ${theme.colors.accent};
       position: absolute;
       transform: translateY(10px);
 

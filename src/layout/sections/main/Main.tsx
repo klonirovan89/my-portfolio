@@ -1,6 +1,6 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
-import photo from './../../../assets/images/myPhoto2.webp'
+import photo from './../../../assets/images/myPhoto.webp'
 import { FlexWrapper } from '../../../components'
 import { Container } from '../../../components'
 import Tilt from 'react-parallax-tilt'
@@ -17,7 +17,7 @@ export const Main: React.FC = () => {
               <S.Photo src={photo} alt="" />
             </Tilt>
           </S.PhotoWrapper>
-          <S.TextWrapper>
+          <div>
             <S.SmallText>Hi There</S.SmallText>
             <S.Name>
               I'm <span>Pavel Shcherbachenko!</span>
@@ -38,7 +38,7 @@ export const Main: React.FC = () => {
               enthusiastic team player focused on personal growth. Now I am improving my skills in
               this direction and expanding them with new technologies.
             </S.MainTitle>
-          </S.TextWrapper>
+          </div>
         </FlexWrapper>
       </Container>
     </S.Main>

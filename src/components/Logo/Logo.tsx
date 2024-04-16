@@ -1,6 +1,7 @@
 import React from 'react'
 import { Icon } from '../Icon'
 import { animateScroll } from 'react-scroll'
+import styled from 'styled-components'
 
 export const Logo: React.FC = () => {
   return (
@@ -9,7 +10,11 @@ export const Logo: React.FC = () => {
         animateScroll.scrollToTop()
       }}
     >
-      <Icon iconId={'code'} />
+      <Wrapper>
+        <Icon iconId={'code'} />
+      </Wrapper>
     </a>
   )
 }
+
+const Wrapper = styled.div``

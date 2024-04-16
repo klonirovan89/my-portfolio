@@ -6,21 +6,21 @@ import {
   TabsItemsType,
   WorksDataType,
 } from './types'
-import socialImg from '../../assets/images/proj-1.png'
-import timerImg from '../../assets/images/proj-2.png'
+import Cards from '../../assets/images/Cards.webp'
+import Portfolio from '../../assets/images/Portfolio.webp'
 
 export const itemsSlider: ItemsSliderType = [
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    userName: '@Ivan Ivanow',
+    text: 'Preparation, I have often said, is rightly two-thirds of any venture.',
+    userName: '@Amelia Earhart',
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    userName: '@Ivan Ivanow',
+    text: 'Learning is a treasure that will follow its owner everywhere.',
+    userName: '@Chinese Proverb',
   },
   {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    userName: '@Ivan Ivanow',
+    text: 'Иногда, для того, чтобы изменить свою жизнь, нужно просто перестать ждать и начать действовать.',
+    userName: '@Алексей Христинин',
   },
 ]
 
@@ -150,7 +150,7 @@ export const tabsItems: TabsItemsType = [
 
 export const worksData: WorksDataType = [
   {
-    src: socialImg, //TODO
+    src: Cards,
     title: 'Cards',
     text: 'In this application you can create a set of cards on absolutely any topic and use them for memorization. You can also look at decks of other users. The main page contains filtering, navigation and sorting elements, while the decks themselves are presented in table form. The application implements authorization, registration and password recovery.',
     type: 'react',
@@ -159,12 +159,12 @@ export const worksData: WorksDataType = [
     demo: 'https://cards-production.vercel.app/',
   },
   {
-    src: timerImg, //TODO
+    src: Portfolio,
     title: 'Portfolio ',
     text: "This portfolio project is designed to provide a visually appealing and user-friendly way to display my professional work and achievements. It includes information about me, my skills, projects I've worked on, and how to contact me.",
     type: 'spa',
     id: 'spa',
     href: 'https://github.com/klonirovan89/my-portfolio',
-    demo: 'https://cards-production.vercel.app/', //TODO
+    demo: 'https://my-portfolio-klonirovan89.vercel.app/',
   },
 ]
