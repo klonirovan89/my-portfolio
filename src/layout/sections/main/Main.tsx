@@ -11,14 +11,20 @@ export const Main: React.FC = () => {
   return (
     <S.Main id={'home'}>
       <Container>
-        <FlexWrapper align={'center'} justify={'space-between'} wrap={'wrap'}>
-          <div>
+        <FlexWrapper align={'center'} justify={'center'} wrap={'wrap'}>
+          <S.PhotoWrapper>
+            <Tilt tiltEnable={false} scale={1.1} transitionSpeed={2500}>
+              <S.Photo src={photo} alt="" />
+            </Tilt>
+          </S.PhotoWrapper>
+          <S.TextWrapper>
             <S.SmallText>Hi There</S.SmallText>
             <S.Name>
-              I am <span>Pavel Shcherbachenko</span>
+              I'm <span>Pavel Shcherbachenko!</span>
             </S.Name>
             <S.MainTitle>
-              <p>A Web Developer.</p>
+              {/*<p>A Web Developer.</p>*/}
+
               <Typewriter
                 options={{
                   strings: ['A Web Developer.', 'A Frontend Developer.'],
@@ -28,12 +34,13 @@ export const Main: React.FC = () => {
                 }}
               />
             </S.MainTitle>
-          </div>
-          <S.PhotoWrapper>
-            <Tilt tiltEnable={false} scale={1.1} transitionSpeed={2500}>
-              <S.Photo src={photo} alt="" />
-            </Tilt>
-          </S.PhotoWrapper>
+            <S.MainTitle>
+              I'm frontend developer with experience in creating SPA using React, Redux,
+              redux-Toolkit, Axios, React-Router-Dom, TypeScript, JavaScript, SCSS, HTML. I am
+              enthusiastic team player focused on personal growth. Now I am improving my skills in
+              this direction and expanding them with new technologies.
+            </S.MainTitle>
+          </S.TextWrapper>
         </FlexWrapper>
       </Container>
     </S.Main>

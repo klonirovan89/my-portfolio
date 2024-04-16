@@ -8,6 +8,7 @@ import { Contact } from './layout/sections/contacts'
 import { Footer } from './layout/footer'
 import { Particle } from './components/particle'
 import { GoTopBtn } from './components/goTopBtn'
+import { Slogan } from './layout/sections/slogan/Slogan'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Works />
       <Testimony />
+      <Slogan />
       <Contact />
       <Footer />
       <GoTopBtn />

@@ -10,7 +10,7 @@ const Main = styled.section`
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
-  margin-top: 65px;
+  margin: 65px 0;
 
   &::before {
     content: '';
@@ -45,7 +45,13 @@ const Photo = styled.img`
   }
 `
 
+const TextWrapper = styled.div``
+
 const MainTitle = styled.h1`
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: justify;
+
   ${font({ weight: 400, Fmax: 27, Fmin: 20 })}
 
   p {
@@ -84,4 +90,5 @@ export const S = {
   MainTitle,
   Name,
   SmallText,
+  TextWrapper,
 }
