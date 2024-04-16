@@ -67,11 +67,11 @@ export const skillsData: SkillsDataType = [
   {
     iconId: 'redux',
     title: 'Redux',
-  }, // TODO
+  },
   {
     iconId: 'javascript',
     title: 'JavaScript',
-  }, //TODO
+  },
   {
     iconId: 'typescript',
     title: 'typescript',
@@ -83,31 +83,35 @@ export const skillsData: SkillsDataType = [
   {
     iconId: 'rest',
     title: 'Rest API',
-  }, //TODO
+  },
   {
     iconId: 'axios',
     title: 'Axios',
-  }, //TODO
+  },
   {
     iconId: 'sass',
     title: 'SCSS/SASS',
-  }, //TODO
+  },
   {
-    iconId: 'test',
-    title: 'Unit Test',
-  }, //TODO
+    iconId: 'vite',
+    title: 'Vite',
+  },
   {
     iconId: 'storybook',
     title: 'Storybook',
-  }, //TODO
+  },
   {
     iconId: 'figma',
     title: 'WEB DESIGN',
   },
   {
+    iconId: 'materialUI',
+    title: 'Material UI',
+  },
+  {
     iconId: 'git',
     title: 'GIT',
-  }, //TODO
+  },
 ]
 
 export const tabsItems: TabsItemsType = [

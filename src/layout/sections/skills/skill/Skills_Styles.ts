@@ -21,6 +21,7 @@ const Skill = styled.div`
 
 const IconWrapper = styled.div`
   position: relative;
+  display: flex;
 
   &::before {
     position: absolute;
@@ -38,7 +39,6 @@ const IconWrapper = styled.div`
 
 const SkillTitle = styled.h3`
   margin: 50px 0 15px;
-
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
