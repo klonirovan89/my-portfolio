@@ -23,8 +23,6 @@ export const Main: React.FC = () => {
               I'm <span>Pavel Shcherbachenko!</span>
             </S.Name>
             <S.MainTitle>
-              {/*<p>A Web Developer.</p>*/}
-
               <Typewriter
                 options={{
                   strings: ['A Web Developer.', 'A Frontend Developer.'],

@@ -15,6 +15,7 @@ export type WorksDataType = {
 export type SkillsDataType = {
   iconId: string
   title: string
+  href: string
 }[]
 
 export type HeaderMenuItemsType = {

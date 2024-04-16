@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 
-import { SectionTitle } from '../../../components/SectionTitle'
-import { Button } from '../../../components/Button'
-import { Container } from '../../../components/Container'
+import { SectionTitle } from '../../../components'
+import { Button } from '../../../components'
+import { Container } from '../../../components'
 import { S } from './Contacts_Styles'
 import emailjs from '@emailjs/browser'
 import { z } from 'zod'

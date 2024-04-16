@@ -55,62 +55,77 @@ export const skillsData: SkillsDataType = [
   {
     iconId: 'code',
     title: 'html5',
+    href: 'https://html.com/html5/',
   },
   {
     iconId: 'css',
     title: 'css3',
+    href: 'https://css3.com/',
   },
   {
     iconId: 'react',
     title: 'React',
+    href: 'https://react.dev/',
   },
   {
     iconId: 'redux',
     title: 'Redux',
+    href: 'https://redux.js.org/',
   },
   {
     iconId: 'javascript',
     title: 'JavaScript',
+    href: 'https://www.javascript.com/',
   },
   {
     iconId: 'typescript',
     title: 'typescript',
+    href: 'https://www.typescriptlang.org/',
   },
   {
     iconId: 'styledComponents',
     title: 'styled components',
+    href: 'https://styled-components.com/',
   },
   {
     iconId: 'rest',
     title: 'Rest API',
+    href: '',
   },
   {
     iconId: 'axios',
     title: 'Axios',
+    href: 'https://axios-http.com/',
   },
   {
     iconId: 'sass',
     title: 'SCSS/SASS',
+    href: 'https://sass-lang.com/',
   },
   {
     iconId: 'vite',
     title: 'Vite',
+    href: 'https://vitejs.dev/',
   },
   {
     iconId: 'storybook',
     title: 'Storybook',
+    href: 'https://storybook.js.org/',
   },
   {
     iconId: 'figma',
     title: 'WEB DESIGN',
+    href: 'https://www.figma.com/',
   },
   {
     iconId: 'materialUI',
     title: 'Material UI',
+    href: 'https://mui.com/',
   },
   {
     iconId: 'git',
     title: 'GIT',
+    href: 'https://git-scm.com/',
   },
 ]
 
