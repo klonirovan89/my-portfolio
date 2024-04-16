@@ -38,7 +38,7 @@ export const useParticleOptions = (): ISourceOptions => {
       },
       particles: {
         color: {
-          value: ['#ffffff', '#495057', '#7572D5'],
+          value: ['#ffffff', '#495057', '#FAA916'],
         },
         links: {
           color: '#ffffff',

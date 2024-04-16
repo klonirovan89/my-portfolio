@@ -161,7 +161,7 @@ export const worksData: WorksDataType = [
   {
     src: timerImg, //TODO
     title: 'Portfolio ',
-    text: 'This is a repository of my portfolio in which I used the Styled Components library of React and implemented CSS management with its help.',
+    text: "This portfolio project is designed to provide a visually appealing and user-friendly way to display my professional work and achievements. It includes information about me, my skills, projects I've worked on, and how to contact me.",
     type: 'spa',
     id: 'spa',
     href: 'https://github.com/klonirovan89/my-portfolio',
