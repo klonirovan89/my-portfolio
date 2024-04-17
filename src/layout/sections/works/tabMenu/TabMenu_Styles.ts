@@ -5,7 +5,7 @@ const TabMenu = styled.nav`
     display: flex;
     justify-content: space-between;
 
-    max-width: 352px;
+    max-width: 200px;
     width: 100%;
 
     margin: 0 auto 40px;

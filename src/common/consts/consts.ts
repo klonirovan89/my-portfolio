@@ -135,10 +135,6 @@ export const tabsItems: TabsItemsType = [
     status: 'all',
   },
   {
-    title: 'landing page',
-    status: 'landing',
-  },
-  {
     title: 'React',
     status: 'react',
   },

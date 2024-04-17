@@ -12,7 +12,7 @@ export const MobileMenu: React.FC = () => {
         <span></span>
       </S.BurgerButton>
       <S.MobileMenuPopup isOpen={open} onClick={() => setOpen(!open)}>
-        <Menu />
+        <Menu handleMenuItemClick={() => setOpen(!open)} />
       </S.MobileMenuPopup>
     </S.MobileMenu>
   )
